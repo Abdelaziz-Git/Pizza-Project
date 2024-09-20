@@ -41,21 +41,7 @@ namespace Pizza_Project
             }
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void pbShowPassword_Click(object sender, EventArgs e)
         {
             txtPassword.PasswordChar = '\0';

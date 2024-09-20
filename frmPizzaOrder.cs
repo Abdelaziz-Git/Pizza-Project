@@ -116,7 +116,6 @@ namespace Pizza_Project
             }
             lbToppingChoiced.Text = Toppings;
         }
-
         void UpdateWhereToEat()
         {
             if (rbEatIn.Checked)
@@ -163,7 +162,6 @@ namespace Pizza_Project
         {
             UpdateSize();
         }
-
         private void rdMedium_CheckedChanged(object sender, EventArgs e)
         {
             UpdateSize();
@@ -172,7 +170,6 @@ namespace Pizza_Project
         {
             UpdateSize();
         }
-
         private void rbThinCrust_CheckedChanged(object sender, EventArgs e)
         {
             UpdateCrust();
@@ -181,77 +178,51 @@ namespace Pizza_Project
         {
             UpdateCrust();
         }
-
         private void rbEatIn_CheckedChanged(object sender, EventArgs e)
         {
             UpdateWhereToEat();
         }
-
         private void rbTakeOut_CheckedChanged(object sender, EventArgs e)
         {
             UpdateWhereToEat();
         }
-
         private void cbExtraCheese_CheckedChanged(object sender, EventArgs e)
         {
             UpdateToppings();
         }
-
         private void gbPizzaToppings_Enter(object sender, EventArgs e)
         {
             
 
         }
-
         private void cbMushrooms_CheckedChanged(object sender, EventArgs e)
         {
             UpdateToppings();
 
         }
-
         private void cbTomates_CheckedChanged(object sender, EventArgs e)
         {
             UpdateToppings();
 
         }
-
         private void cbOnion_CheckedChanged(object sender, EventArgs e)
         {
             UpdateToppings();
 
         }
-
         private void cbOlives_CheckedChanged(object sender, EventArgs e)
         {
             UpdateToppings();
 
         }
-
         private void cbGreenPeppers_CheckedChanged(object sender, EventArgs e)
         {
             UpdateToppings();
         }
-
-        private void lbToppingChoiced_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gbPizzaSize_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnResetForm_Click(object sender, EventArgs e)
         {
             ResetForm();
         }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnOrderPizza_Click(object sender, EventArgs e)
         {
             if(MessageBox.Show("Confirm Order","Confirm",MessageBoxButtons.OKCancel,MessageBoxIcon.Question)
@@ -266,15 +237,6 @@ namespace Pizza_Project
 
             }
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbWhereToEatChoiced_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

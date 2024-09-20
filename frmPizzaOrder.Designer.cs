@@ -78,9 +78,7 @@
             this.gbPizzaSize.Size = new System.Drawing.Size(151, 190);
             this.gbPizzaSize.TabIndex = 3;
             this.gbPizzaSize.TabStop = false;
-            this.gbPizzaSize.Text = "Pizza Size";
-            this.gbPizzaSize.Enter += new System.EventHandler(this.gbPizzaSize_Enter);
-            // 
+            this.gbPizzaSize.Text = "Pizza Size";            // 
             // rbLarge
             // 
             this.rbLarge.AutoSize = true;
@@ -271,7 +269,6 @@
             this.gbWhereToEat.TabIndex = 14;
             this.gbWhereToEat.TabStop = false;
             this.gbWhereToEat.Text = "Where to eat";
-            this.gbWhereToEat.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // rbTakeOut
             // 
@@ -341,7 +338,6 @@
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Order Summary";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // lbWhereToEatChoiced
             // 
@@ -353,7 +349,6 @@
             this.lbWhereToEatChoiced.Size = new System.Drawing.Size(60, 26);
             this.lbWhereToEatChoiced.TabIndex = 34;
             this.lbWhereToEatChoiced.Text = "Eat in";
-            this.lbWhereToEatChoiced.Click += new System.EventHandler(this.lbWhereToEatChoiced_Click);
             // 
             // lbWhereToEatTitle
             // 
@@ -377,7 +372,6 @@
             this.lbToppingChoiced.TabIndex = 32;
             this.lbToppingChoiced.Text = "No Toppings.....";
             this.lbToppingChoiced.UseCompatibleTextRendering = true;
-            this.lbToppingChoiced.Click += new System.EventHandler(this.lbToppingChoiced_Click);
             // 
             // lbToppingsTitle
             // 
