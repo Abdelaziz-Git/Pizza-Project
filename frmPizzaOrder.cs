@@ -54,7 +54,7 @@ namespace Pizza_Project
         }
         float CalculateTotalPrice()
         {
-            return GetSelectedSizePrice() + GetSelectedCrustPrice() + CalculateToppingsPrice();
+            return (GetSelectedSizePrice() + GetSelectedCrustPrice() + CalculateToppingsPrice()) * (float)numUpDownNbrOfPizza.Value;
         }
 
         void UpdateTotalPrice()
@@ -123,7 +123,7 @@ namespace Pizza_Project
             else
                 lbWhereToEatChoiced.Text = rbTakeOut.Text;
         }
-       void ResetForm()
+        void ResetForm()
         {
             btnOrderPizza.Enabled = true;
 
@@ -237,6 +237,16 @@ namespace Pizza_Project
 
             }
         }
-        
+
+        private void numUpDownNbrOfPizza_Scroll(object sender, ScrollEventArgs e)
+        {
+            UpdateTotalPrice();
+        }
+
+        private void numUpDownNbrOfPizza_Click(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
+
+        }
     }
 }

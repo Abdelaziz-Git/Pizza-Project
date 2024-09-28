@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Label lblHowManyPizza;
             this.gbPizzaSize = new System.Windows.Forms.GroupBox();
             this.rbLarge = new System.Windows.Forms.RadioButton();
             this.rbMedium = new System.Windows.Forms.RadioButton();
@@ -59,12 +60,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbPrice = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.numUpDownNbrOfPizza = new System.Windows.Forms.NumericUpDown();
+            lblHowManyPizza = new System.Windows.Forms.Label();
             this.gbPizzaSize.SuspendLayout();
             this.gbPizzaCrustType.SuspendLayout();
             this.gbPizzaToppings.SuspendLayout();
             this.gbWhereToEat.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownNbrOfPizza)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblHowManyPizza
+            // 
+            lblHowManyPizza.AutoSize = true;
+            lblHowManyPizza.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblHowManyPizza.Location = new System.Drawing.Point(290, 454);
+            lblHowManyPizza.Name = "lblHowManyPizza";
+            lblHowManyPizza.Size = new System.Drawing.Size(168, 27);
+            lblHowManyPizza.TabIndex = 22;
+            lblHowManyPizza.Text = "How many Pizza";
             // 
             // gbPizzaSize
             // 
@@ -78,7 +92,8 @@
             this.gbPizzaSize.Size = new System.Drawing.Size(151, 190);
             this.gbPizzaSize.TabIndex = 3;
             this.gbPizzaSize.TabStop = false;
-            this.gbPizzaSize.Text = "Pizza Size";            // 
+            this.gbPizzaSize.Text = "Pizza Size";
+            // 
             // rbLarge
             // 
             this.rbLarge.AutoSize = true;
@@ -300,7 +315,7 @@
             // 
             this.btnOrderPizza.BackColor = System.Drawing.Color.Lime;
             this.btnOrderPizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrderPizza.Location = new System.Drawing.Point(416, 451);
+            this.btnOrderPizza.Location = new System.Drawing.Point(489, 481);
             this.btnOrderPizza.Name = "btnOrderPizza";
             this.btnOrderPizza.Size = new System.Drawing.Size(164, 52);
             this.btnOrderPizza.TabIndex = 15;
@@ -312,7 +327,7 @@
             // 
             this.btnResetForm.BackColor = System.Drawing.Color.Red;
             this.btnResetForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResetForm.Location = new System.Drawing.Point(205, 451);
+            this.btnResetForm.Location = new System.Drawing.Point(82, 481);
             this.btnResetForm.Name = "btnResetForm";
             this.btnResetForm.Size = new System.Drawing.Size(164, 52);
             this.btnResetForm.TabIndex = 16;
@@ -461,13 +476,34 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Make Your Pizza";
             // 
+            // numUpDownNbrOfPizza
+            // 
+            this.numUpDownNbrOfPizza.Font = new System.Drawing.Font("Microsoft New Tai Lue", 15F);
+            this.numUpDownNbrOfPizza.Location = new System.Drawing.Point(336, 486);
+            this.numUpDownNbrOfPizza.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numUpDownNbrOfPizza.Name = "numUpDownNbrOfPizza";
+            this.numUpDownNbrOfPizza.Size = new System.Drawing.Size(73, 47);
+            this.numUpDownNbrOfPizza.TabIndex = 21;
+            this.numUpDownNbrOfPizza.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numUpDownNbrOfPizza.Click += new System.EventHandler(this.numUpDownNbrOfPizza_Click);
+            // 
             // frmPizzaOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(891, 534);
+            this.ClientSize = new System.Drawing.Size(940, 559);
+            this.Controls.Add(lblHowManyPizza);
+            this.Controls.Add(this.numUpDownNbrOfPizza);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.label1);
@@ -494,6 +530,7 @@
             this.gbWhereToEat.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownNbrOfPizza)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -532,6 +569,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbPrice;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown numUpDownNbrOfPizza;
     }
 }
 
